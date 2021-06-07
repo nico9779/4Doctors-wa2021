@@ -1,0 +1,58 @@
+section {
+    background-color: var(--light-gray);
+}
+
+.form-box {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    margin: auto;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px #8a8a8a;
+    text-align: center;
+}
+.form-box form {
+    text-align: center;
+}
+
+.form-box h2 {
+    font-weight: bold;
+}
+
+.form-box label {
+    margin: 10px;
+}
+
+.form-box .radio-box {
+    margin: 15px 0;
+}
+
+.form-box .error {
+    color: var(--main-red);
+    font-weight: bold;
+}
+
+.form-box #password_strength {
+    width: 100%;
+    max-width: 300px;
+    padding: 7px;
+    margin: 10px auto;
+    border: none;
+    color: #fff;
+}
+
+.form-box #add_doctor_message {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .form-box {
+        max-width: initial !important;
+        margin: auto !important;
+        border-radius: initial;
+        box-shadow: initial;
+    }
+
+}

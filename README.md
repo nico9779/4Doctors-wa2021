@@ -1,5 +1,5 @@
-![alt text](mockup/top.png)
-![alt text](mockup/logo.png)
+![alt text](4doctors/top.png)
+![alt text](4doctors/logo.png)
 
 # Web Applications Project 20/21
 

@@ -1,0 +1,67 @@
+a {
+    text-decoration: none !important;
+}
+
+header {
+    display: block !important;
+    background-color: #fff;
+    background-image: url('../media/logo.png');
+}
+
+#toggle-menu-button {
+    display: none;
+}
+
+section {
+    width: 100% !important;
+    background-color: var(--light-gray);
+}
+
+#log-out-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-radius: 10px;
+}
+
+#menu-button-container {
+    margin-top: 85px;
+    text-align: center;
+}
+
+#menu-button-container div {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 330px;
+    height: 240px;
+    margin: 30px;
+    padding: 8px;
+    background-position: center 90%;
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-button-container div:hover {
+    background-size: auto 85%;
+}
+
+#menu-button-container h3 {
+    font-weight: bold;
+    color: var(--main-red);
+    text-transform: uppercase;
+}
+
+#menu-button-container a:nth-child(1) div {
+    background-image: url('../media/prescriptions-link.jpg');
+}
+
+#menu-button-container a:nth-child(2) div {
+    background-image: url('../media/examinations-link.jpg');
+}
+
+#menu-button-container a:nth-child(3) div {
+    background-image: url('../media/profile-link.jpg');
+}

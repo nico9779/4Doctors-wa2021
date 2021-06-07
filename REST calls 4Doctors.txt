@@ -1,0 +1,62 @@
+MEDICAL EXAMINATION:
+
+createMedicalExamination (from F345MED1K0283759 doctor for GVNPVAG4RE44S3D9 patient, on 2022-04-23 at 16:30, no outcome yet)
+curl -v -X POST -H "Content-Type: application/json" -d "{\"medicalExamination\":{\"doctor_cf\":\"F345MED1K0283759\",\"patient_cf\":\"GVNPVAG4RE44S3D9\",\"date\":\"2022-04-23\",\"time\":\"16:30\",\"outcome\":\"--\"}}" http://localhost:8080/4Doctors-1.00/rest/medicalExamination
+
+readMedicalExamination
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/medicalExamination/F345MED1K0283759/2022-04-23/16:30
+
+updateMedicalExaminationOutcome
+curl -v -X PUT -H "Content-Type: application/json" -d "{\"medicalExamination\":{\"doctor_cf\":\"F345MED1K0283759\",\"patient_cf\":\"GVNPVAG4RE44S3D9\",\"date\":\"2022-04-23\",\"time\":\"16:30\",\"outcome\":\"esito aggiornato.\"}}" http://localhost:8080/4Doctors-1.00/rest/medicalExamination/F345MED1K0283759/2022-04-23/16:30
+
+deleteMedicalExamination
+curl -v -X DELETE http://localhost:8080/4Doctors-1.00/rest/medicalExamination/F345MED1K0283759/2022-04-23/16:30
+
+searchMedicalExaminationByPatient
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/medicalExamination/patient/GVNPVAG4RE44S3D9
+
+
+
+
+MEDICINE:
+
+addMedicine
+curl -v -X POST -H "Content-Type: application/json" -d "{\"medicine\":{\"code\":\"AH38D7G3KL\",\"name\":\"Locoidon\",\"medicine_class\":\"ETICI\",\"producer\":\"Leo Pharma\",\"description\":\"Corticosteroidi\"}}" http://localhost:8080/4Doctors-1.00/rest/medicine
+
+listMedicine
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/medicine
+
+userMedicine
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/medicine/MLNMTT96E16H816G
+
+
+
+
+DOCTOR:
+
+getAllActiveDoctors
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/doctor/list
+
+getDoctor
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/doctor/SON01MED1C0G1UR0
+
+createDoctor
+curl -v -X POST -H "Content-Type: application/json" -d "{\"doctor\":{\"cf\":\"LVRNCL97B12G224O\",\"name\":\"Nicola\",\"surname\":\"Levorato\",\"email\":\"nicola.levorato.2@studenti.unipd.it\",\"password\":\"test\",\"birthday\":\"1997-02-12\",\"birthplace\":\"Padova\",\"address\":\"Via Provinciale Nord, 107 Fosso\",\"gender\":\"M\",\"aslcode\":\"31457\"}}" http://localhost:8080/4Doctors-1.00/rest/doctor
+
+updateDoctorStatus
+curl -v -X PUT -H "Content-Type: application/json" http://localhost:8080/4Doctors-1.00/rest/doctor/LVRNCL97B12G224O
+
+deleteDoctor
+curl -v -X DELETE http://localhost:8080/4Doctors-1.00/rest/doctor/LVRNCL97B12G224O
+
+PATIENT:
+
+getAllPatients
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/patient/list
+
+getPatient
+curl -v -G http://localhost:8080/4Doctors-1.00/rest/patient/BLLMCL94B14L736U
+
+deletePatient
+curl -v -X DELETE http://localhost:8080/4Doctors-1.00/rest/patient/BLLMCL94B14L736U
+

@@ -1,0 +1,39 @@
+.personal-info h3 {
+    color: var(--main-red);
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.personal-info p {
+    border-width: 2px; /* thickness of border line*/
+    border-style: solid; /* type of border line*/
+    border-color: var(--main-dark);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 50%;
+    font-size: 1em;
+    padding: 7px 0;
+    display: inline-block;
+}
+
+.personal-info a.button{
+    border: none;
+    font-weight: normal;
+}
+
+.pinfo-block {
+    /*display:flex;*/
+    justify-content:space-between;
+    /*outline: 2px dashed blue;*/
+}
+
+.roundpic {
+    width: 100%;
+    max-width: 150px;
+    min-width: 30px;
+    border-radius: 100%;
+    display: block;
+}

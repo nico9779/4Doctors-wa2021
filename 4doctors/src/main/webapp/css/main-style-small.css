@@ -1,0 +1,32 @@
+.mobile-only {
+	display: block;
+}
+
+.desktop-only {
+	display: none;
+}
+
+header {
+	height: 70px;
+	padding: 10px;
+	background-color: var(--main-dark);
+}
+
+section {
+	width: 100%;
+	padding: 15px;
+	background-image: none;
+	overflow-y: auto;
+}
+
+nav {
+	z-index: 3;
+	position: absolute;
+	left: -200px;
+	width: 200px;
+	transition: left 0.3s ease-in-out;
+}
+
+nav.menu-open {
+	left: 0;
+}

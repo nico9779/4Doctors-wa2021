@@ -1,0 +1,13 @@
+form {
+    display: inline-block;
+}
+
+td.APPROVED {
+    font-weight: bold;
+    color: var(--green);
+}
+
+td.REJECTED {
+    font-weight: bold;
+    color: var(--main-red);
+}

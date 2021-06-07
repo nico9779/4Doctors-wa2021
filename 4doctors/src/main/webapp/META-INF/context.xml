@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Context>
+
+    <Resource name="jdbc/4Doctors"
+              auth="Container"
+              type="javax.sql.DataSource"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://localhost:5432/doctors"
+              username="4Doctors"
+              password="4Doctors"
+              testOnBorrow="true"
+              validationQuery="SELECT 1"
+              timeBetweenEvictionRunsMillis="30000"
+              maxActive="10"
+              minIdle="5"
+              maxWait="10000"
+              initialSize="2"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              closeMethod="close"
+    />
+
+</Context>

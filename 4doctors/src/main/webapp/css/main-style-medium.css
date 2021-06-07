@@ -1,0 +1,14 @@
+header {
+	height: 90px;
+	padding: 15px;
+}
+
+nav {
+	width: 25%;
+}
+
+section {
+	width: 75%;
+	padding: 15px;
+	background-image: none;
+}

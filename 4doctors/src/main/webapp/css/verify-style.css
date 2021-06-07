@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    background: var(--light-gray);
+}
+
+.verify_box {
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    margin: auto;
+    padding: 25px;
+    border-radius: 30px;
+    text-align: center;
+}
+.verify_box form {
+    text-align: center;
+}
+
+.verify_box p {
+    font-weight: bold;
+}
+
+.verify_box img {
+    width: 80%;
+    max-width: 320px;
+    margin: 10px 20px;
+}
+
+.verify_box .error {
+    color: var(--main-red);
+    font-weight: bold;
+}
+
+.verify_box .verify_code {
+    margin-bottom: 20px;
+}
+
+.verify_box .verify_message {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .verify_box {
+        max-width: initial !important;
+        margin: auto !important;
+        border-radius: initial;
+        box-shadow: initial;
+    }
+
+}

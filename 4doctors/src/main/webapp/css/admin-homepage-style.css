@@ -1,0 +1,19 @@
+#doctors_table, #patients_table {
+    display: none;
+    margin-top: 20px;
+}
+
+.info_row {
+    text-align: center;
+    vertical-align: middle;
+}
+
+p.table_message {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 20px 20px 0px;
+}
+
+tbody tr.info_row {
+    background-color: #ff990050 !important;
+}

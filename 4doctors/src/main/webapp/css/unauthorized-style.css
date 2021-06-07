@@ -1,0 +1,32 @@
+body {
+    background: var(--light-gray);
+}
+
+#unauthorized_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.back_button {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#credits {
+    color: black;
+    font-size: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
